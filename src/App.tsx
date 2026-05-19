@@ -73,6 +73,9 @@ export default function App() {
 
   const showRecentSearches = isSearchFocused && query === '' && recentSearches.length > 0
 
+/* JSX is the HTML-looking code that is in my TS file
+Anything inside of the return in a React component is considered JSX
+ */
   return (
     <div className='app'>
       {/* Header */}
@@ -80,7 +83,7 @@ export default function App() {
         <h1>Prox Deals</h1>
         <SearchBar
           onFocus={() => setIsSearchFocused(true)}
-          onBlur={() => setIsSearchFocused(false)}
+          onBlur={() => setTimeout(() => setIsSearchFocused(false), 150)}
         />
       </div>
 
