@@ -53,3 +53,5 @@ src/
 ## Notes
 See Writeup.md for full explanation of decisions, functions, and possible improvements.
 
+## Demo
+<video controls src="Demo.mov" title="Title"></video>
